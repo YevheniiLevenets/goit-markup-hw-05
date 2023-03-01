@@ -120,6 +120,7 @@ p {
   color: var(--primary-text-color);
   text-decoration: none;
   position: relative;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,6 +139,10 @@ p {
   left: 0;
   border-radius: 2px;
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--btn-accent);
+}
 
 .address {
   display: flex;
@@ -154,10 +159,11 @@ p {
   letter-spacing: 0.02em;
   color: var(--text-color-secondary);
   text-decoration: none;
-}
 
-.nav-link:hover,
-.nav-link:focus,
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address-link:hover,
 .address-link:focus {
   color: var(--btn-accent);
@@ -345,6 +351,10 @@ p {
   height: 40px;
   border-radius: 50%;
   background-color: var(--btn-primary);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-socials-link:hover,
 .team-socials-link:focus {
@@ -374,6 +384,10 @@ p {
   border: 1px solid var(--customers);
   border-radius: 4px;
   color: var(--customers);
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-list:not(:last-child) {
   margin-right: 24px;
@@ -431,6 +445,10 @@ p {
   height: 40px;
   border-radius: 50%;
   background-color: var(--footer-social-link);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus {
@@ -518,6 +536,7 @@ p {
   color: var(--btn-accent);
   background-color: var(--background-primary);
   border: 1px solid #e7e9fc;
+
   transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -549,6 +568,7 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -575,8 +595,10 @@ p {
   padding-left: 32px;
   padding-right: 32px;
   overflow: auto;
+
   transform: translate(0, 100%);
   transition: transform 250ms linear;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--background-primary);
